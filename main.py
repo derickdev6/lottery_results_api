@@ -55,7 +55,8 @@ async def get_results():
 }
 
     # Realizar la solicitud HTTP
-    response = requests.get(LOTTERY_URL, headers=headers)
+    session = requests.Session()
+    response = session.get(LOTTERY_URL, headers=headers)
 
     if response.status_code != 200:
         return {
