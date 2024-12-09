@@ -1,0 +1,4 @@
+venv
+requests
+bs4
+__pycache__
