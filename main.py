@@ -46,8 +46,13 @@ async def validate_api_key(x_api_key: str = Header(...)):
 async def get_results():
     # Encabezados para la solicitud HTTP
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
-    }
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/114.0.0.0 Safari/537.36"
+    ),
+    "Referer": "https://www.pagatodo.com.co/",  # Indica que vienes desde su sitio
+}
 
     # Realizar la solicitud HTTP
     response = requests.get(LOTTERY_URL, headers=headers)
