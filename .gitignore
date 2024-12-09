@@ -2,3 +2,4 @@ venv
 requests
 bs4
 __pycache__
+.env

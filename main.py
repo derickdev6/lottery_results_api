@@ -1,9 +1,18 @@
-from fastapi import FastAPI
 import requests
+import os
+from fastapi import FastAPI, HTTPException, Header
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+from fastapi import Depends
+
+
+load_dotenv()
 
 # Crear instancia de FastAPI
 app = FastAPI()
+
+# API Key almacenada en una variable de entorno (usa un valor fijo para pruebas locales si lo prefieres)
+API_KEY = os.getenv("API_KEY", "my-secure-api-key")
 
 # URL de la página
 LOTTERY_URL = "https://www.pagatodo.com.co/resultados.php?plg=resultados-loterias"
@@ -27,8 +36,13 @@ src_to_text_mapping = {
     "modules/mod_resultados/images/logo-15-extradecolombia.png?crc=112948180": "Extra de Colombia",
 }
 
+# Middleware o dependencia para validar la API Key
+async def validate_api_key(x_api_key: str = Header(...)):
+    if x_api_key != API_KEY:
+        raise HTTPException(status_code=401, detail="Unauthorized")
 
-@app.get("/results")
+
+@app.get("/results", dependencies=[Depends(validate_api_key)])
 async def get_results():
     # Encabezados para la solicitud HTTP
     headers = {
