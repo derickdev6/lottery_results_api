@@ -1,0 +1,107 @@
+[
+    {
+        "nombre_loteria": "Lotería de Cundinamarca",
+        "numero": "9481",
+        "numero_serie": "025",
+        "fecha": "2024-12-02",
+        "cuando_juega": "LUNES"
+    },
+    {
+        "nombre_loteria": "Lotería del Tolima",
+        "numero": "4090",
+        "numero_serie": "125",
+        "fecha": "2024-12-02",
+        "cuando_juega": "LUNES"
+    },
+    {
+        "nombre_loteria": "Lotería de la Cruz Roja",
+        "numero": "4517",
+        "numero_serie": "277",
+        "fecha": "2024-12-03",
+        "cuando_juega": "MARTES"
+    },
+    {
+        "nombre_loteria": "Lotería de Huila",
+        "numero": "7483",
+        "numero_serie": "066",
+        "fecha": "2024-12-03",
+        "cuando_juega": "MARTES"
+    },
+    {
+        "nombre_loteria": "Lotería del Meta",
+        "numero": "2401",
+        "numero_serie": "018",
+        "fecha": "2024-12-04",
+        "cuando_juega": "MIÉRCOLES"
+    },
+    {
+        "nombre_loteria": "Lotería del Valle",
+        "numero": "5460",
+        "numero_serie": "091",
+        "fecha": "2024-12-04",
+        "cuando_juega": "MIÉRCOLES"
+    },
+    {
+        "nombre_loteria": "Lotería de Manizales",
+        "numero": "6285",
+        "numero_serie": "113",
+        "fecha": "2024-12-04",
+        "cuando_juega": "MIÉRCOLES"
+    },
+    {
+        "nombre_loteria": "Lotería de Bogotá",
+        "numero": "1262",
+        "numero_serie": "054",
+        "fecha": "2024-12-05",
+        "cuando_juega": "JUEVES"
+    },
+    {
+        "nombre_loteria": "Lotería del Quindío",
+        "numero": "8186",
+        "numero_serie": "053",
+        "fecha": "2024-12-05",
+        "cuando_juega": "JUEVES"
+    },
+    {
+        "nombre_loteria": "Lotería de Risaralda",
+        "numero": "5095",
+        "numero_serie": "160",
+        "fecha": "2024-12-06",
+        "cuando_juega": "VIERNES"
+    },
+    {
+        "nombre_loteria": "Lotería de Medellín",
+        "numero": "8901",
+        "numero_serie": "347",
+        "fecha": "2024-12-06",
+        "cuando_juega": "VIERNES"
+    },
+    {
+        "nombre_loteria": "Lotería de Santander",
+        "numero": "0286",
+        "numero_serie": "003",
+        "fecha": "2024-12-06",
+        "cuando_juega": "VIERNES"
+    },
+    {
+        "nombre_loteria": "Lotería de Boyacá",
+        "numero": "6493",
+        "numero_serie": "336",
+        "fecha": "2024-12-07",
+        "cuando_juega": "SÁBADOS"
+    },
+    {
+        "nombre_loteria": "Extra de Colombia",
+        "numero": "8742",
+        "numero_serie": "278",
+        "fecha": "2024-12-07",
+        "cuando_juega": "SÁBADOS"
+    },
+    {
+        "nombre_loteria": "Lotería del Cauca",
+        "numero": "8785",
+        "numero_serie": "203",
+        "fecha": "2024-12-07",
+        "cuando_juega": "SÁBADOS"
+    }
+]
