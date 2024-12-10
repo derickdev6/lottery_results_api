@@ -1,107 +1,2917 @@
 [
     {
-        "nombre_loteria": "Lotería de Cundinamarca",
-        "numero": "9481",
-        "numero_serie": "025",
-        "fecha": "2024-12-02",
-        "cuando_juega": "LUNES"
+        "nombre": "Lotería de Cundinamarca",
+        "fecha": "2024-12-09",
+        "resultado": "9984",
+        "serie": "168",
+        "secos": [
+            {
+                "nombre": "seco300",
+                "resultado": "9466",
+                "serie": "103"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "6557",
+                "serie": "071"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "7646",
+                "serie": "186"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "1700",
+                "serie": "255"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "3557",
+                "serie": "208"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "7310",
+                "serie": "073"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "6562",
+                "serie": "019"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "5004",
+                "serie": "004"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "1154",
+                "serie": "039"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "7829",
+                "serie": "089"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "9402",
+                "serie": "195"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "4782",
+                "serie": "073"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "1884",
+                "serie": "001"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "0493",
+                "serie": "167"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "3797",
+                "serie": "013"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "2474",
+                "serie": "233"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "8638",
+                "serie": "298"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "4511",
+                "serie": "039"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "1584",
+                "serie": "117"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "5439",
+                "serie": "123"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "2340",
+                "serie": "159"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "6925",
+                "serie": "209"
+            },
+            {
+                "nombre": "1seco6",
+                "resultado": "1116",
+                "serie": "237"
+            },
+            {
+                "nombre": "2seco6",
+                "resultado": "4423",
+                "serie": "132"
+            },
+            {
+                "nombre": "3seco6",
+                "resultado": "6198",
+                "serie": "225"
+            },
+            {
+                "nombre": "4seco6",
+                "resultado": "1895",
+                "serie": "086"
+            },
+            {
+                "nombre": "5seco6",
+                "resultado": "0431",
+                "serie": "285"
+            },
+            {
+                "nombre": "6seco6",
+                "resultado": "5669",
+                "serie": "148"
+            },
+            {
+                "nombre": "7seco6",
+                "resultado": "0438",
+                "serie": "295"
+            },
+            {
+                "nombre": "8seco6",
+                "resultado": "9498",
+                "serie": "174"
+            },
+            {
+                "nombre": "9seco6",
+                "resultado": "0380",
+                "serie": "086"
+            },
+            {
+                "nombre": "10seco6",
+                "resultado": "2119",
+                "serie": "142"
+            },
+            {
+                "nombre": "11seco6",
+                "resultado": "7835",
+                "serie": "210"
+            },
+            {
+                "nombre": "12seco6",
+                "resultado": "4162",
+                "serie": "091"
+            },
+            {
+                "nombre": "13seco6",
+                "resultado": "8960",
+                "serie": "236"
+            },
+            {
+                "nombre": "14seco6",
+                "resultado": "7272",
+                "serie": "169"
+            },
+            {
+                "nombre": "15seco6",
+                "resultado": "8242",
+                "serie": "096"
+            },
+            {
+                "nombre": "16seco6",
+                "resultado": "5369",
+                "serie": "136"
+            },
+            {
+                "nombre": "17seco6",
+                "resultado": "2222",
+                "serie": "170"
+            },
+            {
+                "nombre": "18seco6",
+                "resultado": "2261",
+                "serie": "246"
+            },
+            {
+                "nombre": "19seco6",
+                "resultado": "8533",
+                "serie": "238"
+            },
+            {
+                "nombre": "20seco6",
+                "resultado": "8499",
+                "serie": "175"
+            },
+            {
+                "nombre": "21seco6",
+                "resultado": "0565",
+                "serie": "052"
+            },
+            {
+                "nombre": "22seco6",
+                "resultado": "0770",
+                "serie": "059"
+            },
+            {
+                "nombre": "23seco6",
+                "resultado": "0764",
+                "serie": "147"
+            },
+            {
+                "nombre": "24seco6",
+                "resultado": "0962",
+                "serie": "051"
+            },
+            {
+                "nombre": "25seco6",
+                "resultado": "1222",
+                "serie": "057"
+            },
+            {
+                "nombre": "26seco6",
+                "resultado": "8143",
+                "serie": "233"
+            },
+            {
+                "nombre": "27seco6",
+                "resultado": "2083",
+                "serie": "204"
+            },
+            {
+                "nombre": "28seco6",
+                "resultado": "2082",
+                "serie": "016"
+            },
+            {
+                "nombre": "29seco6",
+                "resultado": "2389",
+                "serie": "182"
+            },
+            {
+                "nombre": "30seco6",
+                "resultado": "4923",
+                "serie": "109"
+            },
+            {
+                "nombre": "31seco6",
+                "resultado": "4153",
+                "serie": "071"
+            },
+            {
+                "nombre": "32seco6",
+                "resultado": "7782",
+                "serie": "096"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería del Tolima",
-        "numero": "4090",
-        "numero_serie": "125",
-        "fecha": "2024-12-02",
-        "cuando_juega": "LUNES"
+        "nombre": "Lotería del Tolima",
+        "fecha": "2024-12-09",
+        "resultado": "1604",
+        "serie": "093",
+        "secos": [
+            {
+                "nombre": "1seco250",
+                "resultado": "0281",
+                "serie": "163"
+            },
+            {
+                "nombre": "1seco220",
+                "resultado": "9263",
+                "serie": "000"
+            },
+            {
+                "nombre": "1seco46",
+                "resultado": "9182",
+                "serie": "084"
+            },
+            {
+                "nombre": "2seco46",
+                "resultado": "5773",
+                "serie": "063"
+            },
+            {
+                "nombre": "1seco33",
+                "resultado": "9808",
+                "serie": "099"
+            },
+            {
+                "nombre": "2seco33",
+                "resultado": "1052",
+                "serie": "168"
+            },
+            {
+                "nombre": "3seco33",
+                "resultado": "8917",
+                "serie": "000"
+            },
+            {
+                "nombre": "1seco18",
+                "resultado": "4063",
+                "serie": "154"
+            },
+            {
+                "nombre": "2seco18",
+                "resultado": "1938",
+                "serie": "174"
+            },
+            {
+                "nombre": "3seco18",
+                "resultado": "3131",
+                "serie": "061"
+            },
+            {
+                "nombre": "4seco18",
+                "resultado": "2084",
+                "serie": "171"
+            },
+            {
+                "nombre": "1seco15",
+                "resultado": "5951",
+                "serie": "056"
+            },
+            {
+                "nombre": "2seco15",
+                "resultado": "9600",
+                "serie": "091"
+            },
+            {
+                "nombre": "3seco15",
+                "resultado": "0155",
+                "serie": "162"
+            },
+            {
+                "nombre": "4seco15",
+                "resultado": "4498",
+                "serie": "043"
+            },
+            {
+                "nombre": "5seco15",
+                "resultado": "4532",
+                "serie": "105"
+            },
+            {
+                "nombre": "6seco15",
+                "resultado": "0197",
+                "serie": "191"
+            },
+            {
+                "nombre": "7seco15",
+                "resultado": "0231",
+                "serie": "182"
+            },
+            {
+                "nombre": "8seco15",
+                "resultado": "2557",
+                "serie": "181"
+            },
+            {
+                "nombre": "9seco15",
+                "resultado": "9818",
+                "serie": "153"
+            },
+            {
+                "nombre": "1seco12",
+                "resultado": "1840",
+                "serie": "193"
+            },
+            {
+                "nombre": "2seco12",
+                "resultado": "2152",
+                "serie": "011"
+            },
+            {
+                "nombre": "3seco12",
+                "resultado": "2039",
+                "serie": "017"
+            },
+            {
+                "nombre": "4seco12",
+                "resultado": "9846",
+                "serie": "194"
+            },
+            {
+                "nombre": "5seco12",
+                "resultado": "3372",
+                "serie": "092"
+            },
+            {
+                "nombre": "6seco12",
+                "resultado": "1666",
+                "serie": "043"
+            },
+            {
+                "nombre": "7seco12",
+                "resultado": "5839",
+                "serie": "008"
+            },
+            {
+                "nombre": "8seco12",
+                "resultado": "2136",
+                "serie": "065"
+            },
+            {
+                "nombre": "9seco12",
+                "resultado": "9081",
+                "serie": "112"
+            },
+            {
+                "nombre": "10seco12",
+                "resultado": "0195",
+                "serie": "195"
+            },
+            {
+                "nombre": "11seco12",
+                "resultado": "0008",
+                "serie": "172"
+            },
+            {
+                "nombre": "12seco12",
+                "resultado": "5193",
+                "serie": "109"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de la Cruz Roja",
-        "numero": "4517",
-        "numero_serie": "277",
+        "nombre": "Lotería de la Cruz Roja",
         "fecha": "2024-12-03",
-        "cuando_juega": "MARTES"
+        "resultado": "4517",
+        "serie": "277",
+        "secos": [
+            {
+                "nombre": "1seco100",
+                "resultado": "4531",
+                "serie": "237"
+            },
+            {
+                "nombre": "seco50",
+                "resultado": "7035",
+                "serie": "050"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "2237",
+                "serie": "082"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "3527",
+                "serie": "259"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "0343",
+                "serie": "205"
+            },
+            {
+                "nombre": "1seco30",
+                "resultado": "0231",
+                "serie": "060"
+            },
+            {
+                "nombre": "2seco30",
+                "resultado": "9940",
+                "serie": "121"
+            },
+            {
+                "nombre": "3seco30",
+                "resultado": "1502",
+                "serie": "070"
+            },
+            {
+                "nombre": "4seco30",
+                "resultado": "7447",
+                "serie": "068"
+            },
+            {
+                "nombre": "5seco30",
+                "resultado": "3935",
+                "serie": "010"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "7550",
+                "serie": "283"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "4982",
+                "serie": "112"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "9461",
+                "serie": "096"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "4809",
+                "serie": "159"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "2873",
+                "serie": "247"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "2142",
+                "serie": "277"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "2894",
+                "serie": "095"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "9521",
+                "serie": "070"
+            },
+            {
+                "nombre": "9seco20",
+                "resultado": "0165",
+                "serie": "111"
+            },
+            {
+                "nombre": "10seco20",
+                "resultado": "5516",
+                "serie": "237"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "9812",
+                "serie": "228"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "9355",
+                "serie": "034"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "9777",
+                "serie": "135"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "9789",
+                "serie": "157"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "8808",
+                "serie": "033"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "8440",
+                "serie": "061"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "2784",
+                "serie": "085"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "8000",
+                "serie": "088"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "6876",
+                "serie": "240"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "9264",
+                "serie": "170"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "2298",
+                "serie": "088"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "5874",
+                "serie": "070"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "8577",
+                "serie": "074"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "6882",
+                "serie": "081"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "4725",
+                "serie": "268"
+            },
+            {
+                "nombre": "16seco10",
+                "resultado": "3692",
+                "serie": "089"
+            },
+            {
+                "nombre": "17seco10",
+                "resultado": "2386",
+                "serie": "078"
+            },
+            {
+                "nombre": "18seco10",
+                "resultado": "8182",
+                "serie": "005"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de Huila",
-        "numero": "7483",
-        "numero_serie": "066",
+        "nombre": "Lotería del Huila",
         "fecha": "2024-12-03",
-        "cuando_juega": "MARTES"
+        "resultado": "7483",
+        "serie": "066",
+        "secos": [
+            {
+                "nombre": "1seco150",
+                "resultado": "4574",
+                "serie": "073"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "0254",
+                "serie": "093"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "9278",
+                "serie": "191"
+            },
+            {
+                "nombre": "3seco100",
+                "resultado": "8573",
+                "serie": "190"
+            },
+            {
+                "nombre": "4seco100",
+                "resultado": "0624",
+                "serie": "133"
+            },
+            {
+                "nombre": "5seco100",
+                "resultado": "5335",
+                "serie": "168"
+            },
+            {
+                "nombre": "ganafijo",
+                "resultado": "3007",
+                "serie": "3007"
+            },
+            {
+                "nombre": "1seco30",
+                "resultado": "4627",
+                "serie": "168"
+            },
+            {
+                "nombre": "2seco30",
+                "resultado": "8681",
+                "serie": "011"
+            },
+            {
+                "nombre": "3seco30",
+                "resultado": "1580",
+                "serie": "149"
+            },
+            {
+                "nombre": "4seco30",
+                "resultado": "1128",
+                "serie": "069"
+            },
+            {
+                "nombre": "5seco30",
+                "resultado": "0609",
+                "serie": "105"
+            },
+            {
+                "nombre": "6seco30",
+                "resultado": "3480",
+                "serie": "186"
+            },
+            {
+                "nombre": "7seco30",
+                "resultado": "3238",
+                "serie": "185"
+            },
+            {
+                "nombre": "8seco30",
+                "resultado": "9189",
+                "serie": "042"
+            },
+            {
+                "nombre": "9seco30",
+                "resultado": "2973",
+                "serie": "183"
+            },
+            {
+                "nombre": "10seco30",
+                "resultado": "2777",
+                "serie": "129"
+            },
+            {
+                "nombre": "1seco15",
+                "resultado": "1837",
+                "serie": "138"
+            },
+            {
+                "nombre": "2seco15",
+                "resultado": "0279",
+                "serie": "016"
+            },
+            {
+                "nombre": "3seco15",
+                "resultado": "1923",
+                "serie": "039"
+            },
+            {
+                "nombre": "4seco15",
+                "resultado": "3333",
+                "serie": "100"
+            },
+            {
+                "nombre": "5seco15",
+                "resultado": "6054",
+                "serie": "002"
+            },
+            {
+                "nombre": "6seco15",
+                "resultado": "5667",
+                "serie": "099"
+            },
+            {
+                "nombre": "7seco15",
+                "resultado": "0681",
+                "serie": "063"
+            },
+            {
+                "nombre": "8seco15",
+                "resultado": "4458",
+                "serie": "108"
+            },
+            {
+                "nombre": "9seco15",
+                "resultado": "5993",
+                "serie": "173"
+            },
+            {
+                "nombre": "10seco15",
+                "resultado": "5461",
+                "serie": "045"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería del Meta",
-        "numero": "2401",
-        "numero_serie": "018",
+        "nombre": "Lotería del Meta",
         "fecha": "2024-12-04",
-        "cuando_juega": "MIÉRCOLES"
+        "resultado": "2401",
+        "serie": "018",
+        "secos": [
+            {
+                "nombre": "1seco300",
+                "resultado": "0024",
+                "serie": "043"
+            },
+            {
+                "nombre": "1seco200",
+                "resultado": "7105",
+                "serie": "042"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "0766",
+                "serie": "033"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "2205",
+                "serie": "146"
+            },
+            {
+                "nombre": "3seco100",
+                "resultado": "2257",
+                "serie": "080"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "0097",
+                "serie": "137"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "7118",
+                "serie": "130"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "2298",
+                "serie": "118"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "8982",
+                "serie": "073"
+            },
+            {
+                "nombre": "5seco50",
+                "resultado": "2378",
+                "serie": "026"
+            },
+            {
+                "nombre": "6seco50",
+                "resultado": "3165",
+                "serie": "095"
+            },
+            {
+                "nombre": "7seco50",
+                "resultado": "3847",
+                "serie": "131"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "2538",
+                "serie": "122"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "6926",
+                "serie": "125"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "2725",
+                "serie": "072"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "7103",
+                "serie": "104"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "2847",
+                "serie": "067"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "7982",
+                "serie": "070"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "4642",
+                "serie": "063"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "7994",
+                "serie": "105"
+            },
+            {
+                "nombre": "9seco20",
+                "resultado": "5176",
+                "serie": "007"
+            },
+            {
+                "nombre": "10seco20",
+                "resultado": "9495",
+                "serie": "005"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "0606",
+                "serie": "066"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "3624",
+                "serie": "089"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "5369",
+                "serie": "101"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "7371",
+                "serie": "024"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "0630",
+                "serie": "061"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "3657",
+                "serie": "075"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "5749",
+                "serie": "129"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "7418",
+                "serie": "055"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "2976",
+                "serie": "064"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "4037",
+                "serie": "030"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "6256",
+                "serie": "132"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "7651",
+                "serie": "126"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "3239",
+                "serie": "106"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "4254",
+                "serie": "109"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "6967",
+                "serie": "100"
+            },
+            {
+                "nombre": "16seco10",
+                "resultado": "9131",
+                "serie": "031"
+            },
+            {
+                "nombre": "17seco10",
+                "resultado": "3569",
+                "serie": "034"
+            },
+            {
+                "nombre": "18seco10",
+                "resultado": "5314",
+                "serie": "124"
+            },
+            {
+                "nombre": "19seco10",
+                "resultado": "6986",
+                "serie": "018"
+            },
+            {
+                "nombre": "20seco10",
+                "resultado": "9715",
+                "serie": "052"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería del Valle",
-        "numero": "5460",
-        "numero_serie": "091",
+        "nombre": "Lotería del Valle",
         "fecha": "2024-12-04",
-        "cuando_juega": "MIÉRCOLES"
+        "resultado": "5460",
+        "serie": "091",
+        "secos": [
+            {
+                "nombre": "1seco500",
+                "resultado": "7165",
+                "serie": "005"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "2174",
+                "serie": "166"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "2399",
+                "serie": "096"
+            },
+            {
+                "nombre": "1seco60",
+                "resultado": "8586",
+                "serie": "217"
+            },
+            {
+                "nombre": "2seco60",
+                "resultado": "1822",
+                "serie": "291"
+            },
+            {
+                "nombre": "3seco60",
+                "resultado": "7398",
+                "serie": "088"
+            },
+            {
+                "nombre": "seco40",
+                "resultado": "3203",
+                "serie": "025"
+            },
+            {
+                "nombre": "1seco30",
+                "resultado": "8335",
+                "serie": "175"
+            },
+            {
+                "nombre": "2seco30",
+                "resultado": "2000",
+                "serie": "074"
+            },
+            {
+                "nombre": "3seco30",
+                "resultado": "5422",
+                "serie": "213"
+            },
+            {
+                "nombre": "4seco30",
+                "resultado": "3109",
+                "serie": "250"
+            },
+            {
+                "nombre": "5seco30",
+                "resultado": "9484",
+                "serie": "039"
+            },
+            {
+                "nombre": "6seco30",
+                "resultado": "4025",
+                "serie": "265"
+            },
+            {
+                "nombre": "7seco30",
+                "resultado": "6059",
+                "serie": "298"
+            },
+            {
+                "nombre": "8seco30",
+                "resultado": "1324",
+                "serie": "004"
+            },
+            {
+                "nombre": "9seco30",
+                "resultado": "5701",
+                "serie": "092"
+            },
+            {
+                "nombre": "10seco30",
+                "resultado": "1495",
+                "serie": "037"
+            },
+            {
+                "nombre": "11seco30",
+                "resultado": "3583",
+                "serie": "025"
+            },
+            {
+                "nombre": "12seco30",
+                "resultado": "0062",
+                "serie": "307"
+            },
+            {
+                "nombre": "13seco30",
+                "resultado": "5273",
+                "serie": "043"
+            },
+            {
+                "nombre": "14seco30",
+                "resultado": "8194",
+                "serie": "119"
+            },
+            {
+                "nombre": "15seco30",
+                "resultado": "2169",
+                "serie": "264"
+            },
+            {
+                "nombre": "16seco30",
+                "resultado": "7783",
+                "serie": "023"
+            },
+            {
+                "nombre": "17seco30",
+                "resultado": "3127",
+                "serie": "302"
+            },
+            {
+                "nombre": "18seco30",
+                "resultado": "3156",
+                "serie": "194"
+            },
+            {
+                "nombre": "19seco30",
+                "resultado": "4286",
+                "serie": "198"
+            },
+            {
+                "nombre": "20seco30",
+                "resultado": "2800",
+                "serie": "278"
+            },
+            {
+                "nombre": "21seco30",
+                "resultado": "7471",
+                "serie": "138"
+            },
+            {
+                "nombre": "22seco30",
+                "resultado": "2327",
+                "serie": "147"
+            },
+            {
+                "nombre": "23seco30",
+                "resultado": "9362",
+                "serie": "276"
+            },
+            {
+                "nombre": "24seco30",
+                "resultado": "3785",
+                "serie": "232"
+            },
+            {
+                "nombre": "25seco30",
+                "resultado": "5372",
+                "serie": "162"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de Manizales",
-        "numero": "6285",
-        "numero_serie": "113",
+        "nombre": "Lotería de Manizales",
         "fecha": "2024-12-04",
-        "cuando_juega": "MIÉRCOLES"
+        "resultado": "6285",
+        "serie": "113",
+        "secos": [
+            {
+                "nombre": "1seco100",
+                "resultado": "7556",
+                "serie": "061"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "8157",
+                "serie": "176"
+            },
+            {
+                "nombre": "1seco80",
+                "resultado": "8835",
+                "serie": "224"
+            },
+            {
+                "nombre": "2seco80",
+                "resultado": "1117",
+                "serie": "215"
+            },
+            {
+                "nombre": "1seco60",
+                "resultado": "2188",
+                "serie": "002"
+            },
+            {
+                "nombre": "2seco60",
+                "resultado": "2604",
+                "serie": "186"
+            },
+            {
+                "nombre": "3seco60",
+                "resultado": "9875",
+                "serie": "172"
+            },
+            {
+                "nombre": "4seco60",
+                "resultado": "6728",
+                "serie": "248"
+            },
+            {
+                "nombre": "5seco60",
+                "resultado": "9140",
+                "serie": "227"
+            },
+            {
+                "nombre": "6seco60",
+                "resultado": "0466",
+                "serie": "093"
+            },
+            {
+                "nombre": "1seco30",
+                "resultado": "5094",
+                "serie": "156"
+            },
+            {
+                "nombre": "2seco30",
+                "resultado": "1993",
+                "serie": "159"
+            },
+            {
+                "nombre": "3seco30",
+                "resultado": "6692",
+                "serie": "045"
+            },
+            {
+                "nombre": "4seco30",
+                "resultado": "2637",
+                "serie": "040"
+            },
+            {
+                "nombre": "5seco30",
+                "resultado": "1974",
+                "serie": "291"
+            },
+            {
+                "nombre": "6seco30",
+                "resultado": "5415",
+                "serie": "016"
+            },
+            {
+                "nombre": "7seco30",
+                "resultado": "3491",
+                "serie": "230"
+            },
+            {
+                "nombre": "8seco30",
+                "resultado": "9887",
+                "serie": "312"
+            },
+            {
+                "nombre": "9seco30",
+                "resultado": "3158",
+                "serie": "228"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "3936",
+                "serie": "227"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "8301",
+                "serie": "007"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "0792",
+                "serie": "225"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "2112",
+                "serie": "336"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "3470",
+                "serie": "031"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "7781",
+                "serie": "107"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "5114",
+                "serie": "219"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "2050",
+                "serie": "125"
+            },
+            {
+                "nombre": "9seco20",
+                "resultado": "9586",
+                "serie": "259"
+            },
+            {
+                "nombre": "10seco20",
+                "resultado": "1359",
+                "serie": "078"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de Bogotá",
-        "numero": "1262",
-        "numero_serie": "054",
+        "nombre": "Lotería de Bogotá",
         "fecha": "2024-12-05",
-        "cuando_juega": "JUEVES"
+        "resultado": "1262",
+        "serie": "054",
+        "secos": [
+            {
+                "nombre": "1seco500",
+                "resultado": "2153",
+                "serie": "188"
+            },
+            {
+                "nombre": "1seco250",
+                "resultado": "7739",
+                "serie": "301"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "5753",
+                "serie": "376"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "9017",
+                "serie": "224"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "3953",
+                "serie": "431"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "8767",
+                "serie": "093"
+            },
+            {
+                "nombre": "5seco50",
+                "resultado": "8572",
+                "serie": "234"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "4150",
+                "serie": "344"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "2895",
+                "serie": "336"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "8975",
+                "serie": "086"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "1349",
+                "serie": "446"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "6347",
+                "serie": "408"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "0837",
+                "serie": "319"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "6180",
+                "serie": "126"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "8980",
+                "serie": "293"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "5949",
+                "serie": "242"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "4318",
+                "serie": "007"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "2493",
+                "serie": "230"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "5165",
+                "serie": "345"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "4902",
+                "serie": "242"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "9889",
+                "serie": "113"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "6229",
+                "serie": "347"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "5589",
+                "serie": "304"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "6870",
+                "serie": "241"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "0439",
+                "serie": "302"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería del Quindío",
-        "numero": "8186",
-        "numero_serie": "053",
+        "nombre": "Lotería del Quindío",
         "fecha": "2024-12-05",
-        "cuando_juega": "JUEVES"
+        "resultado": "8186",
+        "serie": "053",
+        "secos": [
+            {
+                "nombre": "1seco300",
+                "resultado": "4805",
+                "serie": "087"
+            },
+            {
+                "nombre": "1seco200",
+                "resultado": "8530",
+                "serie": "119"
+            },
+            {
+                "nombre": "2seco200",
+                "resultado": "1700",
+                "serie": "015"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "0900",
+                "serie": "035"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "7190",
+                "serie": "192"
+            },
+            {
+                "nombre": "3seco100",
+                "resultado": "7172",
+                "serie": "061"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "4856",
+                "serie": "178"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "9591",
+                "serie": "086"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "5939",
+                "serie": "036"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "8491",
+                "serie": "002"
+            },
+            {
+                "nombre": "5seco50",
+                "resultado": "4359",
+                "serie": "136"
+            },
+            {
+                "nombre": "6seco50",
+                "resultado": "1361",
+                "serie": "128"
+            },
+            {
+                "nombre": "7seco50",
+                "resultado": "2145",
+                "serie": "078"
+            },
+            {
+                "nombre": "8seco50",
+                "resultado": "2444",
+                "serie": "005"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "0434",
+                "serie": "023"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "9620",
+                "serie": "082"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "6690",
+                "serie": "189"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "1300",
+                "serie": "172"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "8118",
+                "serie": "023"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "5595",
+                "serie": "090"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "8213",
+                "serie": "050"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "0637",
+                "serie": "165"
+            },
+            {
+                "nombre": "9seco20",
+                "resultado": "9236",
+                "serie": "197"
+            },
+            {
+                "nombre": "10seco20",
+                "resultado": "5221",
+                "serie": "180"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "5867",
+                "serie": "175"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "6880",
+                "serie": "145"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "7071",
+                "serie": "084"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "2006",
+                "serie": "190"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "6669",
+                "serie": "181"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "3405",
+                "serie": "199"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "7926",
+                "serie": "041"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "3651",
+                "serie": "146"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "0135",
+                "serie": "122"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "9122",
+                "serie": "045"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "6494",
+                "serie": "104"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "6612",
+                "serie": "118"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "4670",
+                "serie": "080"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "4053",
+                "serie": "000"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "0281",
+                "serie": "021"
+            },
+            {
+                "nombre": "16seco10",
+                "resultado": "0192",
+                "serie": "037"
+            },
+            {
+                "nombre": "17seco10",
+                "resultado": "7104",
+                "serie": "188"
+            },
+            {
+                "nombre": "18seco10",
+                "resultado": "4334",
+                "serie": "028"
+            },
+            {
+                "nombre": "19seco10",
+                "resultado": "4787",
+                "serie": "152"
+            },
+            {
+                "nombre": "20seco10",
+                "resultado": "6996",
+                "serie": "074"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de Risaralda",
-        "numero": "5095",
-        "numero_serie": "160",
+        "nombre": "Lotería de Risaralda",
         "fecha": "2024-12-06",
-        "cuando_juega": "VIERNES"
+        "resultado": "5095",
+        "serie": "160",
+        "secos": [
+            {
+                "nombre": "1seco300",
+                "resultado": "3450",
+                "serie": "120"
+            },
+            {
+                "nombre": "1seco200",
+                "resultado": "4958",
+                "serie": "175"
+            },
+            {
+                "nombre": "1seco150",
+                "resultado": "7496",
+                "serie": "280"
+            },
+            {
+                "nombre": "1seco80",
+                "resultado": "7576",
+                "serie": "247"
+            },
+            {
+                "nombre": "1seco60",
+                "resultado": "6299",
+                "serie": "268"
+            },
+            {
+                "nombre": "2seco60",
+                "resultado": "4016",
+                "serie": "070"
+            },
+            {
+                "nombre": "3seco60",
+                "resultado": "5319",
+                "serie": "014"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "8065",
+                "serie": "198"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "4595",
+                "serie": "200"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "6653",
+                "serie": "135"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "0199",
+                "serie": "297"
+            },
+            {
+                "nombre": "5seco50",
+                "resultado": "0854",
+                "serie": "157"
+            },
+            {
+                "nombre": "1seco40",
+                "resultado": "4292",
+                "serie": "145"
+            },
+            {
+                "nombre": "2seco40",
+                "resultado": "1855",
+                "serie": "257"
+            },
+            {
+                "nombre": "3seco40",
+                "resultado": "4069",
+                "serie": "043"
+            },
+            {
+                "nombre": "1seco35",
+                "resultado": "7392",
+                "serie": "180"
+            },
+            {
+                "nombre": "2seco35",
+                "resultado": "3907",
+                "serie": "236"
+            },
+            {
+                "nombre": "3seco35",
+                "resultado": "3227",
+                "serie": "170"
+            },
+            {
+                "nombre": "4seco35",
+                "resultado": "8823",
+                "serie": "085"
+            },
+            {
+                "nombre": "5seco35",
+                "resultado": "6932",
+                "serie": "033"
+            },
+            {
+                "nombre": "1seco30",
+                "resultado": "0108",
+                "serie": "035"
+            },
+            {
+                "nombre": "2seco30",
+                "resultado": "5979",
+                "serie": "175"
+            },
+            {
+                "nombre": "3seco30",
+                "resultado": "8434",
+                "serie": "223"
+            },
+            {
+                "nombre": "4seco30",
+                "resultado": "7984",
+                "serie": "051"
+            },
+            {
+                "nombre": "5seco30",
+                "resultado": "4041",
+                "serie": "207"
+            },
+            {
+                "nombre": "6seco30",
+                "resultado": "0634",
+                "serie": "083"
+            },
+            {
+                "nombre": "7seco30",
+                "resultado": "9195",
+                "serie": "082"
+            },
+            {
+                "nombre": "8seco30",
+                "resultado": "9201",
+                "serie": "257"
+            },
+            {
+                "nombre": "9seco30",
+                "resultado": "8641",
+                "serie": "223"
+            },
+            {
+                "nombre": "10seco30",
+                "resultado": "2005",
+                "serie": "062"
+            },
+            {
+                "nombre": "11seco30",
+                "resultado": "9363",
+                "serie": "092"
+            },
+            {
+                "nombre": "1escaleramillonaria",
+                "resultado": "2342",
+                "serie": "282"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de Medellín",
-        "numero": "8901",
-        "numero_serie": "347",
+        "nombre": "Lotería de Medellín",
         "fecha": "2024-12-06",
-        "cuando_juega": "VIERNES"
+        "resultado": "8901",
+        "serie": "347",
+        "secos": [
+            {
+                "nombre": "1seco1000",
+                "resultado": "5283",
+                "serie": "376"
+            },
+            {
+                "nombre": "1seco700",
+                "resultado": "2480",
+                "serie": "160"
+            },
+            {
+                "nombre": "2seco700",
+                "resultado": "4432",
+                "serie": "234"
+            },
+            {
+                "nombre": "3seco700",
+                "resultado": "8372",
+                "serie": "247"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "2357",
+                "serie": "001"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "9375",
+                "serie": "093"
+            },
+            {
+                "nombre": "3seco100",
+                "resultado": "4430",
+                "serie": "198"
+            },
+            {
+                "nombre": "4seco100",
+                "resultado": "5497",
+                "serie": "205"
+            },
+            {
+                "nombre": "5seco100",
+                "resultado": "5591",
+                "serie": "206"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "1893",
+                "serie": "049"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "8284",
+                "serie": "259"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "2225",
+                "serie": "475"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "2932",
+                "serie": "324"
+            },
+            {
+                "nombre": "5seco50",
+                "resultado": "7318",
+                "serie": "350"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "2153",
+                "serie": "197"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "4578",
+                "serie": "211"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "6830",
+                "serie": "285"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "2813",
+                "serie": "453"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "5680",
+                "serie": "127"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "9577",
+                "serie": "276"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "2998",
+                "serie": "145"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "5719",
+                "serie": "302"
+            },
+            {
+                "nombre": "9seco20",
+                "resultado": "3947",
+                "serie": "327"
+            },
+            {
+                "nombre": "10seco20",
+                "resultado": "6053",
+                "serie": "086"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "0836",
+                "serie": "487"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "4076",
+                "serie": "308"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "5131",
+                "serie": "119"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "8898",
+                "serie": "003"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "1245",
+                "serie": "131"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "4704",
+                "serie": "050"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "6336",
+                "serie": "443"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "9787",
+                "serie": "228"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "2200",
+                "serie": "372"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "4889",
+                "serie": "400"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "6640",
+                "serie": "214"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "9867",
+                "serie": "480"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "3509",
+                "serie": "325"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "4944",
+                "serie": "001"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "8705",
+                "serie": "321"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de Santander",
-        "numero": "0286",
-        "numero_serie": "003",
+        "nombre": "Lotería de Santander",
         "fecha": "2024-12-06",
-        "cuando_juega": "VIERNES"
+        "resultado": "0286",
+        "serie": "003",
+        "secos": [
+            {
+                "nombre": "seco1000",
+                "resultado": "3999",
+                "serie": "293"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "2147",
+                "serie": "113"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "2746",
+                "serie": "164"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "6076",
+                "serie": "177"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "2623",
+                "serie": "254"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "3019",
+                "serie": "119"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "2994",
+                "serie": "198"
+            },
+            {
+                "nombre": "5seco50",
+                "resultado": "6634",
+                "serie": "209"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "8119",
+                "serie": "040"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "9194",
+                "serie": "260"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "6882",
+                "serie": "022"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "8387",
+                "serie": "146"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "0662",
+                "serie": "272"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "7975",
+                "serie": "304"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "2333",
+                "serie": "295"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "6145",
+                "serie": "228"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "4633",
+                "serie": "252"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "3064",
+                "serie": "087"
+            },
+            {
+                "nombre": "1seco5",
+                "resultado": "9906",
+                "serie": "146"
+            },
+            {
+                "nombre": "2seco5",
+                "resultado": "6000",
+                "serie": "311"
+            },
+            {
+                "nombre": "3seco5",
+                "resultado": "3670",
+                "serie": "072"
+            },
+            {
+                "nombre": "4seco5",
+                "resultado": "8734",
+                "serie": "326"
+            },
+            {
+                "nombre": "5seco5",
+                "resultado": "6484",
+                "serie": "018"
+            },
+            {
+                "nombre": "6seco5",
+                "resultado": "2610",
+                "serie": "022"
+            },
+            {
+                "nombre": "7seco5",
+                "resultado": "3325",
+                "serie": "053"
+            },
+            {
+                "nombre": "8seco5",
+                "resultado": "8565",
+                "serie": "195"
+            },
+            {
+                "nombre": "9seco5",
+                "resultado": "3266",
+                "serie": "327"
+            },
+            {
+                "nombre": "10seco5",
+                "resultado": "7496",
+                "serie": "205"
+            },
+            {
+                "nombre": "11seco5",
+                "resultado": "5664",
+                "serie": "246"
+            },
+            {
+                "nombre": "12seco5",
+                "resultado": "6187",
+                "serie": "068"
+            },
+            {
+                "nombre": "13seco5",
+                "resultado": "8285",
+                "serie": "123"
+            },
+            {
+                "nombre": "14seco5",
+                "resultado": "5422",
+                "serie": "058"
+            },
+            {
+                "nombre": "15seco5",
+                "resultado": "9271",
+                "serie": "125"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería de Boyacá",
-        "numero": "6493",
-        "numero_serie": "336",
+        "nombre": "Lotería de Boyacá",
         "fecha": "2024-12-07",
-        "cuando_juega": "SÁBADOS"
+        "resultado": "6493",
+        "serie": "336",
+        "secos": [
+            {
+                "nombre": "1seco1000",
+                "resultado": "7724",
+                "serie": "039"
+            },
+            {
+                "nombre": "1seco400",
+                "resultado": "8063",
+                "serie": "360"
+            },
+            {
+                "nombre": "1seco300",
+                "resultado": "6879",
+                "serie": "121"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "1674",
+                "serie": "111"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "6315",
+                "serie": "010"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "2088",
+                "serie": "345"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "3932",
+                "serie": "075"
+            },
+            {
+                "nombre": "4seco50",
+                "resultado": "3406",
+                "serie": "085"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "6719",
+                "serie": "018"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "0086",
+                "serie": "159"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "6666",
+                "serie": "396"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "4573",
+                "serie": "429"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "2543",
+                "serie": "035"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "7890",
+                "serie": "441"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "1041",
+                "serie": "028"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "5781",
+                "serie": "005"
+            },
+            {
+                "nombre": "9seco20",
+                "resultado": "5783",
+                "serie": "394"
+            },
+            {
+                "nombre": "10seco20",
+                "resultado": "5381",
+                "serie": "399"
+            },
+            {
+                "nombre": "11seco20",
+                "resultado": "5440",
+                "serie": "348"
+            },
+            {
+                "nombre": "12seco20",
+                "resultado": "3138",
+                "serie": "012"
+            },
+            {
+                "nombre": "13seco20",
+                "resultado": "1203",
+                "serie": "313"
+            },
+            {
+                "nombre": "14seco20",
+                "resultado": "5511",
+                "serie": "209"
+            },
+            {
+                "nombre": "15seco20",
+                "resultado": "2807",
+                "serie": "232"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "0188",
+                "serie": "368"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "0404",
+                "serie": "177"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "0825",
+                "serie": "287"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "0959",
+                "serie": "185"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "1205",
+                "serie": "195"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "1578",
+                "serie": "180"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "2232",
+                "serie": "163"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "2510",
+                "serie": "251"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "2727",
+                "serie": "207"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "2814",
+                "serie": "006"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "2952",
+                "serie": "278"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "3590",
+                "serie": "432"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "3937",
+                "serie": "229"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "4016",
+                "serie": "209"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "4240",
+                "serie": "338"
+            },
+            {
+                "nombre": "16seco10",
+                "resultado": "4530",
+                "serie": "193"
+            },
+            {
+                "nombre": "17seco10",
+                "resultado": "4598",
+                "serie": "027"
+            },
+            {
+                "nombre": "18seco10",
+                "resultado": "4673",
+                "serie": "355"
+            },
+            {
+                "nombre": "19seco10",
+                "resultado": "4899",
+                "serie": "334"
+            },
+            {
+                "nombre": "20seco10",
+                "resultado": "5062",
+                "serie": "083"
+            },
+            {
+                "nombre": "21seco10",
+                "resultado": "5616",
+                "serie": "428"
+            },
+            {
+                "nombre": "22seco10",
+                "resultado": "5799",
+                "serie": "439"
+            },
+            {
+                "nombre": "23seco10",
+                "resultado": "6121",
+                "serie": "315"
+            },
+            {
+                "nombre": "24seco10",
+                "resultado": "6304",
+                "serie": "206"
+            },
+            {
+                "nombre": "25seco10",
+                "resultado": "6447",
+                "serie": "096"
+            },
+            {
+                "nombre": "26seco10",
+                "resultado": "6929",
+                "serie": "442"
+            },
+            {
+                "nombre": "27seco10",
+                "resultado": "7223",
+                "serie": "237"
+            },
+            {
+                "nombre": "28seco10",
+                "resultado": "7247",
+                "serie": "201"
+            },
+            {
+                "nombre": "29seco10",
+                "resultado": "7272",
+                "serie": "288"
+            },
+            {
+                "nombre": "30seco10",
+                "resultado": "8118",
+                "serie": "437"
+            },
+            {
+                "nombre": "31seco10",
+                "resultado": "8361",
+                "serie": "306"
+            },
+            {
+                "nombre": "32seco10",
+                "resultado": "8487",
+                "serie": "012"
+            },
+            {
+                "nombre": "33seco10",
+                "resultado": "8869",
+                "serie": "402"
+            },
+            {
+                "nombre": "34seco10",
+                "resultado": "9260",
+                "serie": "034"
+            },
+            {
+                "nombre": "35seco10",
+                "resultado": "9564",
+                "serie": "347"
+            },
+            {
+                "nombre": "36seco10",
+                "resultado": "9991",
+                "serie": "316"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Extra de Colombia",
-        "numero": "8742",
-        "numero_serie": "278",
+        "nombre": "Lotería Extra de Colombia",
         "fecha": "2024-12-07",
-        "cuando_juega": "SÁBADOS"
+        "resultado": "8742",
+        "serie": "278",
+        "secos": [
+            {
+                "nombre": "1seco300",
+                "resultado": "4998",
+                "serie": "268"
+            },
+            {
+                "nombre": "seco200",
+                "resultado": "0179",
+                "serie": "340"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "8451",
+                "serie": "115"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "6860",
+                "serie": "041"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "8625",
+                "serie": "281"
+            },
+            {
+                "nombre": "1seco20",
+                "resultado": "3175",
+                "serie": "057"
+            },
+            {
+                "nombre": "2seco20",
+                "resultado": "9226",
+                "serie": "331"
+            },
+            {
+                "nombre": "3seco20",
+                "resultado": "4716",
+                "serie": "320"
+            },
+            {
+                "nombre": "4seco20",
+                "resultado": "5163",
+                "serie": "366"
+            },
+            {
+                "nombre": "5seco20",
+                "resultado": "3029",
+                "serie": "164"
+            },
+            {
+                "nombre": "6seco20",
+                "resultado": "6253",
+                "serie": "380"
+            },
+            {
+                "nombre": "7seco20",
+                "resultado": "4727",
+                "serie": "371"
+            },
+            {
+                "nombre": "8seco20",
+                "resultado": "8755",
+                "serie": "290"
+            },
+            {
+                "nombre": "9seco20",
+                "resultado": "7940",
+                "serie": "377"
+            },
+            {
+                "nombre": "10seco20",
+                "resultado": "4786",
+                "serie": "091"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "6064",
+                "serie": "362"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "9984",
+                "serie": "149"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "5530",
+                "serie": "265"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "4104",
+                "serie": "357"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "3978",
+                "serie": "191"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "7612",
+                "serie": "361"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "6822",
+                "serie": "275"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "8771",
+                "serie": "339"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "7802",
+                "serie": "230"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "6064",
+                "serie": "030"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "5883",
+                "serie": "261"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "3737",
+                "serie": "237"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "0564",
+                "serie": "067"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "0508",
+                "serie": "341"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "8494",
+                "serie": "104"
+            },
+            {
+                "nombre": "16seco10",
+                "resultado": "0891",
+                "serie": "300"
+            },
+            {
+                "nombre": "17seco10",
+                "resultado": "7664",
+                "serie": "296"
+            },
+            {
+                "nombre": "18seco10",
+                "resultado": "8451",
+                "serie": "394"
+            },
+            {
+                "nombre": "19seco10",
+                "resultado": "5078",
+                "serie": "357"
+            },
+            {
+                "nombre": "20seco10",
+                "resultado": "2776",
+                "serie": "073"
+            },
+            {
+                "nombre": "21seco10",
+                "resultado": "4292",
+                "serie": "351"
+            },
+            {
+                "nombre": "22seco10",
+                "resultado": "0638",
+                "serie": "059"
+            },
+            {
+                "nombre": "23seco10",
+                "resultado": "0015",
+                "serie": "351"
+            },
+            {
+                "nombre": "24seco10",
+                "resultado": "7092",
+                "serie": "172"
+            },
+            {
+                "nombre": "25seco10",
+                "resultado": "3194",
+                "serie": "146"
+            }
+        ]
     },
     {
-        "nombre_loteria": "Lotería del Cauca",
-        "numero": "8785",
-        "numero_serie": "203",
+        "nombre": "Lotería del Cauca",
         "fecha": "2024-12-07",
-        "cuando_juega": "SÁBADOS"
+        "resultado": "8785",
+        "serie": "203",
+        "secos": [
+            {
+                "nombre": "1seco200",
+                "resultado": "4804",
+                "serie": "034"
+            },
+            {
+                "nombre": "1seco100",
+                "resultado": "7943",
+                "serie": "059"
+            },
+            {
+                "nombre": "2seco100",
+                "resultado": "8766",
+                "serie": "124"
+            },
+            {
+                "nombre": "1seco50",
+                "resultado": "6356",
+                "serie": "084"
+            },
+            {
+                "nombre": "2seco50",
+                "resultado": "1787",
+                "serie": "077"
+            },
+            {
+                "nombre": "3seco50",
+                "resultado": "0517",
+                "serie": "053"
+            },
+            {
+                "nombre": "1seco10",
+                "resultado": "0737",
+                "serie": "106"
+            },
+            {
+                "nombre": "2seco10",
+                "resultado": "1357",
+                "serie": "112"
+            },
+            {
+                "nombre": "3seco10",
+                "resultado": "4940",
+                "serie": "203"
+            },
+            {
+                "nombre": "4seco10",
+                "resultado": "9485",
+                "serie": "135"
+            },
+            {
+                "nombre": "5seco10",
+                "resultado": "3744",
+                "serie": "070"
+            },
+            {
+                "nombre": "6seco10",
+                "resultado": "5611",
+                "serie": "109"
+            },
+            {
+                "nombre": "7seco10",
+                "resultado": "6739",
+                "serie": "210"
+            },
+            {
+                "nombre": "8seco10",
+                "resultado": "9207",
+                "serie": "149"
+            },
+            {
+                "nombre": "9seco10",
+                "resultado": "0543",
+                "serie": "195"
+            },
+            {
+                "nombre": "10seco10",
+                "resultado": "2512",
+                "serie": "110"
+            },
+            {
+                "nombre": "11seco10",
+                "resultado": "4696",
+                "serie": "172"
+            },
+            {
+                "nombre": "12seco10",
+                "resultado": "4905",
+                "serie": "047"
+            },
+            {
+                "nombre": "13seco10",
+                "resultado": "4307",
+                "serie": "055"
+            },
+            {
+                "nombre": "14seco10",
+                "resultado": "9741",
+                "serie": "077"
+            },
+            {
+                "nombre": "15seco10",
+                "resultado": "1401",
+                "serie": "180"
+            },
+            {
+                "nombre": "16seco10",
+                "resultado": "4589",
+                "serie": "002"
+            },
+            {
+                "nombre": "17seco10",
+                "resultado": "9815",
+                "serie": "064"
+            },
+            {
+                "nombre": "18seco10",
+                "resultado": "8936",
+                "serie": "093"
+            },
+            {
+                "nombre": "19seco10",
+                "resultado": "9320",
+                "serie": "141"
+            },
+            {
+                "nombre": "20seco10",
+                "resultado": "3414",
+                "serie": "143"
+            },
+            {
+                "nombre": "21seco10",
+                "resultado": "8565",
+                "serie": "173"
+            },
+            {
+                "nombre": "22seco10",
+                "resultado": "5810",
+                "serie": "181"
+            },
+            {
+                "nombre": "23seco10",
+                "resultado": "9827",
+                "serie": "059"
+            },
+            {
+                "nombre": "24seco10",
+                "resultado": "2392",
+                "serie": "085"
+            },
+            {
+                "nombre": "25seco10",
+                "resultado": "1052",
+                "serie": "106"
+            },
+            {
+                "nombre": "26seco10",
+                "resultado": "7029",
+                "serie": "056"
+            },
+            {
+                "nombre": "27seco10",
+                "resultado": "9682",
+                "serie": "173"
+            }
+        ]
     }
 ]
