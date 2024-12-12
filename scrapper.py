@@ -9,26 +9,6 @@ import time
 import json
 import random
 
-# Diccionario de mapeo para traducir los links al nombre de la lotería
-link_to_name_mapping = {
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-cundinamarca.php?id=703": "Lotería de Cundinamarca",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-tolima.php?id=702": "Lotería del Tolima",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-la-cruz-roja.php?id=698": "Lotería de la Cruz Roja",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-huila.php?id=700": "Lotería del Huila",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-meta.php?id=697": "Lotería del Meta",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-valle.php?id=698": "Lotería del Valle",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-manizales.php?id=696": "Lotería de Manizales",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-bogota.php?id=689": "Lotería de Bogotá",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-quindio.php?id=683": "Lotería del Quindío",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-risaralda.php?id=696": "Lotería de Risaralda",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-medellin.php?id=695": "Lotería de Medellín",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-santander.php?id=669": "Lotería de Santander",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-boyaca.php?id=693": "Lotería de Boyacá",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-extra-de-colombia.php?id=143": "Lotería Extra de Colombia",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-cauca.php?id=695": "Lotería del Cauca",
-}
-
-
 options = Options()
 options.add_argument("--headless")  # Ejecuta sin interfaz gráfica
 options.add_argument("--disable-gpu")
@@ -51,47 +31,44 @@ driver = webdriver.Chrome(
 # URL principal
 URL = "https://www.pagatodo.com.co/resultados.php?plg=resultados-loterias"
 
+# Mapeo de enlaces a nombres basado en búsqueda parcial
+link_name_mapping = {
+    "cundinamarca": "Lotería de Cundinamarca",
+    "tolima": "Lotería del Tolima",
+    "cruz-roja": "Lotería de la Cruz Roja",
+    "huila": "Lotería del Huila",
+    "meta": "Lotería del Meta",
+    "valle": "Lotería del Valle",
+    "manizales": "Lotería de Manizales",
+    "bogota": "Lotería de Bogotá",
+    "quindio": "Lotería del Quindío",
+    "risaralda": "Lotería de Risaralda",
+    "medellin": "Lotería de Medellín",
+    "santander": "Lotería de Santander",
+    "boyaca": "Lotería de Boyacá",
+    "extra-de-colombia": "Lotería Extra de Colombia",
+    "cauca": "Lotería del Cauca",
+}
+
 
 def get_links():
-    driver.get(URL)
     try:
-        print("Cargando página principal para obtener enlaces...")
-        # Espera hasta que los elementos de la página estén cargados
-        WebDriverWait(driver, 15).until(
-            EC.presence_of_all_elements_located((By.TAG_NAME, "a"))
-        )
+        # Leer el archivo links.json
+        with open("links.json", "r", encoding="utf-8") as file:
+            links_data = json.load(file)
 
-        # Imprime el HTML actual para verificar la estructura
-        html = driver.page_source
-        print("HTML cargado:")
-        soup = BeautifulSoup(html, "html.parser")
-        # print(soup.prettify())  # Muestra HTML con formato
+        # Incrementar el ID de cada entrada en 1
+        for entry in links_data:
+            entry["id"] += 1
 
-        # Encuentra todos los enlaces con la clase específica
-        buttons = soup.find_all(
-            "p", string=lambda text: text and "VER PREMIOS SECOS" in text
-        )
-        print(f"Se encontraron {len(buttons)} botones con enlaces.")
+        # Guardar los cambios en el archivo links.json
+        with open("links.json", "w", encoding="utf-8") as file:
+            json.dump(links_data, file, ensure_ascii=False, indent=4)
+
+        return [entry["base"] for entry in links_data]
     except Exception as e:
-        print(f"Error al cargar la página principal: {e}")
-    links = []
-
-    for button in buttons:
-        parent_a = button.find_parent(
-            "a", class_="nonblock nontext Button rounded-corners clearfix colelem"
-        )  # Buscar la etiqueta <a> con clases específicas
-        if parent_a:
-            href = parent_a.get("href")  # Obtener el atributo href
-            if href:
-                # Modificar el texto del enlace para crear una URL completa
-                if href.startswith("javascript:abrir_ventana1('../../"):
-                    href = href.replace(
-                        "javascript:abrir_ventana1('../../",
-                        "https://www.pagatodo.com.co/",
-                    ).replace("')", "")
-                links.append(href)
-
-    return links
+        print(f"Error al procesar links.json: {e}")
+        return []
 
 
 def scrape_details(links):
@@ -129,9 +106,14 @@ def scrape_details(links):
                 paragraphs = child.find_all("p")
                 data.extend([p.text.strip() for p in paragraphs if p.text.strip()])
 
-            # Formatear el JSON según los requisitos
-            loteria_name = link_to_name_mapping.get(link, "Desconocido")
+            # Determinar el nombre de la lotería basado en el enlace
+            loteria_name = "Desconocido"
+            for key, name in link_name_mapping.items():
+                if key in link:
+                    loteria_name = name
+                    break
 
+            # Formatear el JSON según los requisitos
             result = {
                 "nombre": loteria_name,
                 "fecha": data[0] if len(data) > 0 else "N/A",
