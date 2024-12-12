@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -27,16 +28,25 @@ link_to_name_mapping = {
     "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-cauca.php?id=695": "Lotería del Cauca",
 }
 
-# Configuración del navegador con Selenium
+
 options = Options()
-# options.add_argument("--headless")  # Ejecuta el navegador en modo sin interfaz gráfica
-options.add_argument("--disable-blink-features=AutomationControlled")
-options.add_argument("start-maximized")
+options.add_argument("--headless")  # Ejecuta sin interfaz gráfica
+options.add_argument("--disable-gpu")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--window-size=1920,1080")  # Simula un tamaño de ventana completo
+options.add_argument(
+    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+)  # Cambia el agente de usuario
+options.set_capability(
+    "goog:loggingPrefs", {"performance": "ALL"}
+)  # Captura los logs de red
 
 # Inicializa el controlador del navegador
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(
+    service=Service("/opt/homebrew/bin/chromedriver"),
+    options=options,
+)
 
 # URL principal
 URL = "https://www.pagatodo.com.co/resultados.php?plg=resultados-loterias"
