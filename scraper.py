@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import time
+import random
 
 # Diccionario de mapeo para traducir los links al nombre de la lotería
 link_to_name_mapping = {
@@ -35,6 +37,10 @@ def getlinks():
             "Chrome/114.0.0.0 Safari/537.36"
         ),
         "Referer": "https://www.pagatodo.com.co/",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "es-CO,es;q=0.9,en;q=0.8",
+        "Connection": "keep-alive",
     }
 
     # Realizar la solicitud HTTP
@@ -84,6 +90,9 @@ def scrape_details(links):
     }
 
     for link in links:
+        print(f"Procesando enlace {link}...")
+        time.sleep(random.uniform(10, 15))  # Pausa aleatoria entre 10-15 segundos
+
         response = requests.get(link, headers=HEADERS)
         if response.status_code != 200:
             print(
