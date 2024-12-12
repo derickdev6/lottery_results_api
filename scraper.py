@@ -23,13 +23,38 @@ link_to_name_mapping = {
     "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-cauca.php?id=695": "Lotería del Cauca",
 }
 
+# Lista de proxies (puedes agregar más proxies aquí)
+proxies_list = [
+    "198.23.239.134:6540:rhcmqxze:ezyrjl46w73n",
+    "207.244.217.165:6712:rhcmqxze:ezyrjl46w73n",
+    "107.172.163.27:6543:rhcmqxze:ezyrjl46w73n",
+    "64.137.42.112:5157:rhcmqxze:ezyrjl46w73n",
+    "173.211.0.148:6641:rhcmqxze:ezyrjl46w73n",
+    "161.123.152.115:6360:rhcmqxze:ezyrjl46w73n",
+    "167.160.180.203:6754:rhcmqxze:ezyrjl46w73n",
+    "154.36.110.199:6853:rhcmqxze:ezyrjl46w73n",
+    "173.0.9.70:5653:rhcmqxze:ezyrjl46w73n",
+    "173.0.9.209:5792:rhcmqxze:ezyrjl46w73n",
+    # Agrega más proxies según lo necesites
+]
+
+
+# Función para convertir el proxy en el formato que necesita requests
+def get_proxy(proxy_string):
+    parts = proxy_string.split(":")
+    ip = parts[0]
+    port = parts[1]
+    username = parts[2]
+    password = parts[3]
+
+    proxy_url = f"http://{username}:{password}@{ip}:{port}"
+    return {"http": proxy_url, "https": proxy_url}
+
 
 # Función para obtener los enlaces de los botones "Ver premios secos"
 def getlinks():
-    # URL objetivo
     URL = "https://www.pagatodo.com.co/resultados.php?plg=resultados-loterias"
 
-    # Encabezados para la solicitud HTTP
     HEADERS = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -43,18 +68,21 @@ def getlinks():
         "Connection": "keep-alive",
     }
 
-    # Realizar la solicitud HTTP
-    response = requests.get(URL, headers=HEADERS)
+    # Seleccionamos un proxy aleatorio
+    proxy_string = random.choice(proxies_list)
+    proxy = get_proxy(proxy_string)
+
+    print(f"Usando proxy: {proxy_string}")
+    # Realizar la solicitud HTTP con proxy
+    response = requests.get(URL, headers=HEADERS, proxies=proxy)
     if response.status_code != 200:
         print(
             f"Error: No se pudo acceder a la página. Código de estado: {response.status_code}"
         )
         return []
 
-    # Analizar el contenido HTML con BeautifulSoup
     soup = BeautifulSoup(response.content, "html.parser")
 
-    # Buscar las etiquetas <a> que son padres de los <p> con texto "VER PREMIOS SECOS"
     buttons = soup.find_all(
         "p", string=lambda text: text and "VER PREMIOS SECOS" in text
     )
@@ -63,11 +91,10 @@ def getlinks():
     for button in buttons:
         parent_a = button.find_parent(
             "a", class_="nonblock nontext Button rounded-corners clearfix colelem"
-        )  # Buscar la etiqueta <a> con clases específicas
+        )
         if parent_a:
-            href = parent_a.get("href")  # Obtener el atributo href
+            href = parent_a.get("href")
             if href:
-                # Modificar el texto del enlace para crear una URL completa
                 if href.startswith("javascript:abrir_ventana1('../../"):
                     href = href.replace(
                         "javascript:abrir_ventana1('../../",
@@ -91,9 +118,15 @@ def scrape_details(links):
 
     for link in links:
         print(f"Procesando enlace {link}...")
-        time.sleep(random.uniform(10, 15))  # Pausa aleatoria entre 10-15 segundos
+        time.sleep(random.uniform(2, 5))  # Pausa aleatoria entre 10-15 segundos
 
-        response = requests.get(link, headers=HEADERS)
+        # Seleccionamos un proxy aleatorio
+        proxy = {
+            "http": random.choice(proxies_list),
+            "https": random.choice(proxies_list),
+        }
+
+        response = requests.get(link, headers=HEADERS, proxies=proxy)
         if response.status_code != 200:
             print(
                 f"Error: No se pudo acceder al enlace {link}. Código de estado: {response.status_code}"
@@ -103,22 +136,18 @@ def scrape_details(links):
         soup = BeautifulSoup(response.content, "html.parser")
 
         try:
-            # Identificar el contenedor principal
             main_div = soup.select_one("html > body > div > div > div:nth-of-type(3)")
             if not main_div:
                 print(f"No se encontró el contenedor principal en el enlace {link}.")
                 continue
 
-            # Obtener todos los divs hijos del contenedor principal
             child_divs = main_div.find_all("div", recursive=False)
 
-            # Extraer las etiquetas <p> dentro de cada div hijo
             data = []
             for child in child_divs:
                 paragraphs = child.find_all("p")
                 data.extend([p.text.strip() for p in paragraphs if p.text.strip()])
 
-            # Formatear el JSON según los requisitos
             loteria_name = link_to_name_mapping.get(link, "Desconocido")
 
             result = {
@@ -150,8 +179,6 @@ links = getlinks()
 # Scraping iterativo de detalles
 if links:
     print(f"Enlaces encontrados para 'Ver premios secos':{len(links)}")
-    # for link in links:
-    #     print(link)
 
     print("\nIniciando scraping de detalles...")
     details = scrape_details(links)
