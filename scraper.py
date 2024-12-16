@@ -1,88 +1,56 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import time
-import random
 
-# Diccionario de mapeo para traducir los links al nombre de la lotería
-link_to_name_mapping = {
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-cundinamarca.php?id=703": "Lotería de Cundinamarca",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-tolima.php?id=702": "Lotería del Tolima",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-la-cruz-roja.php?id=698": "Lotería de la Cruz Roja",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-huila.php?id=700": "Lotería del Huila",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-meta.php?id=697": "Lotería del Meta",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-valle.php?id=698": "Lotería del Valle",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-manizales.php?id=696": "Lotería de Manizales",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-bogota.php?id=689": "Lotería de Bogotá",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-quindio.php?id=683": "Lotería del Quindío",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-risaralda.php?id=696": "Lotería de Risaralda",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-medellin.php?id=695": "Lotería de Medellín",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-santander.php?id=669": "Lotería de Santander",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-de-boyaca.php?id=693": "Lotería de Boyacá",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-extra-de-colombia.php?id=143": "Lotería Extra de Colombia",
-    "https://www.pagatodo.com.co/modules/mod_resultados/secos-loteria-del-cauca.php?id=695": "Lotería del Cauca",
+# Diccionario de mapeo basado en palabras clave en los enlaces
+link_name_mapping = {
+    "cundinamarca": "Lotería de Cundinamarca",
+    "tolima": "Lotería del Tolima",
+    "cruz-roja": "Lotería de la Cruz Roja",
+    "huila": "Lotería del Huila",
+    "meta": "Lotería del Meta",
+    "valle": "Lotería del Valle",
+    "manizales": "Lotería de Manizales",
+    "bogota": "Lotería de Bogotá",
+    "quindio": "Lotería del Quindío",
+    "risaralda": "Lotería de Risaralda",
+    "medellin": "Lotería de Medellín",
+    "santander": "Lotería de Santander",
+    "boyaca": "Lotería de Boyacá",
+    "extra-de-colombia": "Lotería Extra de Colombia",
+    "cauca": "Lotería del Cauca",
 }
 
-# Lista de proxies (puedes agregar más proxies aquí)
-proxies_list = [
-    "198.23.239.134:6540:rhcmqxze:ezyrjl46w73n",
-    "207.244.217.165:6712:rhcmqxze:ezyrjl46w73n",
-    "107.172.163.27:6543:rhcmqxze:ezyrjl46w73n",
-    "64.137.42.112:5157:rhcmqxze:ezyrjl46w73n",
-    "173.211.0.148:6641:rhcmqxze:ezyrjl46w73n",
-    "161.123.152.115:6360:rhcmqxze:ezyrjl46w73n",
-    "167.160.180.203:6754:rhcmqxze:ezyrjl46w73n",
-    "154.36.110.199:6853:rhcmqxze:ezyrjl46w73n",
-    "173.0.9.70:5653:rhcmqxze:ezyrjl46w73n",
-    "173.0.9.209:5792:rhcmqxze:ezyrjl46w73n",
-    # Agrega más proxies según lo necesites
-]
 
+# Función para realizar solicitudes con ScrapingBee
+def scrapingbee_request(url, render_js=False):
+    api_key = "api-key"  # Reemplazar con su propia clave de API
+    scrapingbee_url = "https://app.scrapingbee.com/api/v1/"
 
-# Función para convertir el proxy en el formato que necesita requests
-def get_proxy(proxy_string):
-    parts = proxy_string.split(":")
-    ip = parts[0]
-    port = parts[1]
-    username = parts[2]
-    password = parts[3]
+    params = {
+        "api_key": api_key,
+        "url": url,
+        "render_js": "true" if render_js else "false",
+        "premium_proxy": "true",
+    }
 
-    proxy_url = f"http://{username}:{password}@{ip}:{port}"
-    return {"http": proxy_url, "https": proxy_url}
+    response = requests.get(scrapingbee_url, params=params)
+    if response.status_code == 200:
+        return response.content
+    else:
+        print(f"Error en ScrapingBee: {response.status_code}")
+        return None
 
 
 # Función para obtener los enlaces de los botones "Ver premios secos"
 def getlinks():
     URL = "https://www.pagatodo.com.co/resultados.php?plg=resultados-loterias"
+    content = scrapingbee_request(URL, render_js=True)
 
-    HEADERS = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/114.0.0.0 Safari/537.36"
-        ),
-        "Referer": "https://www.pagatodo.com.co/",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Accept-Language": "es-CO,es;q=0.9,en;q=0.8",
-        "Connection": "keep-alive",
-    }
-
-    # Seleccionamos un proxy aleatorio
-    proxy_string = random.choice(proxies_list)
-    proxy = get_proxy(proxy_string)
-
-    print(f"Usando proxy: {proxy_string}")
-    # Realizar la solicitud HTTP con proxy
-    response = requests.get(URL, headers=HEADERS, proxies=proxy)
-    if response.status_code != 200:
-        print(
-            f"Error: No se pudo acceder a la página. Código de estado: {response.status_code}"
-        )
+    if not content:
         return []
 
-    soup = BeautifulSoup(response.content, "html.parser")
-
+    soup = BeautifulSoup(content, "html.parser")
     buttons = soup.find_all(
         "p", string=lambda text: text and "VER PREMIOS SECOS" in text
     )
@@ -108,32 +76,14 @@ def getlinks():
 # Función para extraer datos de cada enlace
 def scrape_details(links):
     results = []
-    HEADERS = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/114.0.0.0 Safari/537.36"
-        )
-    }
 
     for link in links:
-        print(f"Procesando enlace {link}...")
-        time.sleep(random.uniform(2, 5))  # Pausa aleatoria entre 10-15 segundos
-
-        # Seleccionamos un proxy aleatorio
-        proxy = {
-            "http": random.choice(proxies_list),
-            "https": random.choice(proxies_list),
-        }
-
-        response = requests.get(link, headers=HEADERS, proxies=proxy)
-        if response.status_code != 200:
-            print(
-                f"Error: No se pudo acceder al enlace {link}. Código de estado: {response.status_code}"
-            )
+        content = scrapingbee_request(link, render_js=True)
+        if not content:
+            print(f"Error: No se pudo acceder al enlace {link}.")
             continue
 
-        soup = BeautifulSoup(response.content, "html.parser")
+        soup = BeautifulSoup(content, "html.parser")
 
         try:
             main_div = soup.select_one("html > body > div > div > div:nth-of-type(3)")
@@ -142,13 +92,17 @@ def scrape_details(links):
                 continue
 
             child_divs = main_div.find_all("div", recursive=False)
-
             data = []
             for child in child_divs:
                 paragraphs = child.find_all("p")
                 data.extend([p.text.strip() for p in paragraphs if p.text.strip()])
 
-            loteria_name = link_to_name_mapping.get(link, "Desconocido")
+            # Determinar el nombre de la lotería basado en el enlace
+            loteria_name = "Desconocido"
+            for key, name in link_name_mapping.items():
+                if key in link:
+                    loteria_name = name
+                    break
 
             result = {
                 "nombre": loteria_name,
@@ -178,12 +132,10 @@ links = getlinks()
 
 # Scraping iterativo de detalles
 if links:
-    print(f"Enlaces encontrados para 'Ver premios secos':{len(links)}")
-
+    print(f"Enlaces encontrados para 'Ver premios secos': {len(links)}")
     print("\nIniciando scraping de detalles...")
     details = scrape_details(links)
 
-    # Guardar resultados en un archivo JSON
     with open("results.json", "w", encoding="utf-8") as file:
         json.dump(details, file, ensure_ascii=False, indent=4)
 
