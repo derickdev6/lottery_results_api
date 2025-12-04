@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import boto3
+from botocore.exceptions import BotoCoreError, ClientError
 
 # Diccionario de mapeo basado en palabras clave en los enlaces
 link_name_mapping = {
@@ -21,10 +23,30 @@ link_name_mapping = {
     "cauca": "Lotería del Cauca",
 }
 
+# AWS S3 bucket configuration
+BUCKET_NAME = "scraperjsonresult"  # Replace with your S3 bucket name
+FILE_NAME = "results.json"
 
-# Función para realizar solicitudes con ScrapingBee
+
+# Function to upload the JSON file to S3
+def upload_to_s3(file_content, bucket, file_name):
+    s3 = boto3.client("s3")
+    try:
+        s3.put_object(
+            Bucket=bucket,
+            Key=file_name,
+            Body=file_content,
+            ContentType="application/json",
+            ACL="public-read",  # Optional: Set access control
+        )
+        print(f"File uploaded to S3: s3://{bucket}/{file_name}")
+    except (BotoCoreError, ClientError) as e:
+        print(f"Error uploading to S3: {e}")
+
+
+# Function for ScrapingBee requests
 def scrapingbee_request(url, render_js=False):
-    api_key = "api-key"  # Reemplazar con su propia clave de API
+    api_key = "api-key"  # Replace with your own API key
     scrapingbee_url = "https://app.scrapingbee.com/api/v1/"
 
     params = {
@@ -38,11 +60,11 @@ def scrapingbee_request(url, render_js=False):
     if response.status_code == 200:
         return response.content
     else:
-        print(f"Error en ScrapingBee: {response.status_code}")
+        print(f"Error in ScrapingBee: {response.status_code}")
         return None
 
 
-# Función para obtener los enlaces de los botones "Ver premios secos"
+# Function to get links from "Ver premios secos"
 def getlinks():
     URL = "https://www.pagatodo.com.co/resultados.php?plg=resultados-loterias"
     content = scrapingbee_request(URL, render_js=True)
@@ -52,7 +74,7 @@ def getlinks():
 
     soup = BeautifulSoup(content, "html.parser")
     buttons = soup.find_all(
-        "p", string=lambda text: text and "VER PREMIOS SECOS" in text
+        "p", string=lambda text: text and "VER PREMIOS SECOS" in text  # type: ignore
     )
     links = []
 
@@ -73,14 +95,14 @@ def getlinks():
     return links
 
 
-# Función para extraer datos de cada enlace
+# Function to scrape details from each link
 def scrape_details(links):
     results = []
 
     for link in links:
         content = scrapingbee_request(link, render_js=True)
         if not content:
-            print(f"Error: No se pudo acceder al enlace {link}.")
+            print(f"Error: Could not access link {link}.")
             continue
 
         soup = BeautifulSoup(content, "html.parser")
@@ -88,7 +110,7 @@ def scrape_details(links):
         try:
             main_div = soup.select_one("html > body > div > div > div:nth-of-type(3)")
             if not main_div:
-                print(f"No se encontró el contenedor principal en el enlace {link}.")
+                print(f"Main container not found for link {link}.")
                 continue
 
             child_divs = main_div.find_all("div", recursive=False)
@@ -97,8 +119,8 @@ def scrape_details(links):
                 paragraphs = child.find_all("p")
                 data.extend([p.text.strip() for p in paragraphs if p.text.strip()])
 
-            # Determinar el nombre de la lotería basado en el enlace
-            loteria_name = "Desconocido"
+            # Determine the lottery name based on the link
+            loteria_name = "Unknown"
             for key, name in link_name_mapping.items():
                 if key in link:
                     loteria_name = name
@@ -122,23 +144,23 @@ def scrape_details(links):
 
             results.append(result)
         except Exception as e:
-            print(f"Error procesando el enlace {link}: {e}")
+            print(f"Error processing link {link}: {e}")
 
     return results
 
 
-# Llamar a la función y obtener los enlaces
-links = getlinks()
+# Lambda handler function
+def lambda_handler(event, context):
+    links = getlinks()
 
-# Scraping iterativo de detalles
-if links:
-    print(f"Enlaces encontrados para 'Ver premios secos': {len(links)}")
-    print("\nIniciando scraping de detalles...")
-    details = scrape_details(links)
+    if links:
+        print(f"Found {len(links)} links for 'Ver premios secos'.")
+        details = scrape_details(links)
 
-    with open("results.json", "w", encoding="utf-8") as file:
-        json.dump(details, file, ensure_ascii=False, indent=4)
-
-    print("\nDatos guardados en results.json")
-else:
-    print("No se encontraron enlaces para 'Ver premios secos'.")
+        # Convert results to JSON and upload to S3
+        json_content = json.dumps(details, ensure_ascii=False, indent=4)
+        upload_to_s3(json_content, BUCKET_NAME, FILE_NAME)
+        return {"statusCode": 200, "body": "Data successfully uploaded to S3"}
+    else:
+        print("No links found for 'Ver premios secos'.")
+        return {"statusCode": 500, "body": "No data to upload"}
